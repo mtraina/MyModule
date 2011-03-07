@@ -1,0 +1,12 @@
+<project name="MyModule" default="prepareTitaniumBuild">
+	<description>
+		Ant build script for Titanium Android module titanium-barcode-example
+	</description>
+
+	<property file="build.properties" />
+
+	<target name="prepareTitaniumBuild" description="Prepares environment for titanium build">
+        <delete dir="${titanium.build.android.dir}"/>
+        <mkdir dir="${titanium.build.android.dir}"/>
+    </target>
+</project>
